@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Still Point — Insert Card (Print)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* Screen preview */
+  body {
+    background: #ccc;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Georgia', serif;
+  }
+
+  .instructions {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 20px;
+    font-size: 13px;
+    color: #555;
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .instructions strong { color: #222; }
+
+  /* The card */
+  .card {
+    width: 6in;
+    height: 4in;
+    background: #f8f7f3;
+    display: grid;
+    grid-template-columns: 1fr 1.6in;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+
+  /* Left: content */
+  .card-left {
+    padding: 0.38in 0.3in 0.38in 0.42in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .brand {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #888;
+  }
+
+  .headline {
+    font-size: 21pt;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin-top: 4pt;
+  }
+
+  .headline em {
+    font-style: italic;
+    color: #444;
+  }
+
+  .body-text {
+    font-size: 8.5pt;
+    color: #555;
+    line-height: 1.65;
+    margin-top: 10pt;
+    max-width: 3.1in;
+  }
+
+  .steps-mini {
+    list-style: none;
+    margin-top: 8pt;
+    display: flex;
+    flex-direction: column;
+    gap: 5pt;
+  }
+
+  .steps-mini li {
+    font-size: 8pt;
+    color: #444;
+    display: flex;
+    gap: 7pt;
+    align-items: baseline;
+    line-height: 1.4;
+  }
+
+  .steps-mini .n {
+    font-size: 7pt;
+    font-weight: 700;
+    width: 13pt;
+    height: 13pt;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .footer-line {
+    font-size: 7.5pt;
+    color: #aaa;
+    line-height: 1.5;
+    margin-top: auto;
+    padding-top: 8pt;
+  }
+
+  /* Right: QR panel */
+  .card-right {
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.24in 0.22in;
+    gap: 10pt;
+  }
+
+  .qr-label-top {
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #aaa;
+    text-align: center;
+  }
+
+  .qr-img {
+    width: 1.15in;
+    height: 1.15in;
+    background: white;
+    padding: 5pt;
+    border-radius: 6px;
+  }
+
+  .qr-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .qr-url {
+    font-size: 6.5pt;
+    color: #ddd;
+    text-align: center;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+  }
+
+  .qr-cta {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+  }
+
+  /* Print rules */
+  @media print {
+    body {
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .instructions { display: none; }
+
+    .card {
+      width: 6in;
+      height: 4in;
+      box-shadow: none;
+      page-break-after: always;
+    }
+
+    @page {
+      size: 6in 4in;
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <strong>Print instructions:</strong> Open print dialog (Ctrl/Cmd + P). Set paper size to 4×6" or "Index Card". Set margins to None. Scale: 100%. This card is designed to print exactly 4"×6" (landscape).
+</div>
+
+<div class="card">
+
+  <!-- Left content -->
+  <div class="card-left">
+
+    <div>
+      <div class="brand">Still Point</div>
+      <div class="headline">A breath<br>anchor.<br><em>Yours.</em></div>
+
+      <p class="body-text">
+        Still Point sits on the outer sides of your nose and amplifies the felt sensation of the breath — making it easier to settle, focus, and arrive in your practice.
+      </p>
+
+      <ul class="steps-mini">
+        <li><span class="n">1</span><span>Rest it gently on the sidewalls of your nose — never in the nostrils.</span></li>
+        <li><span class="n">2</span><span>Take a few natural breaths. Let it settle into place.</span></li>
+        <li><span class="n">3</span><span>Follow the breath. That's it.</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-line">
+      Scan the code for guided practices, how-to videos, and support.<br>
+      Questions? hello@goinginward.life — I read everything. — Michael
+    </div>
+
+  </div>
+
+  <!-- Right QR panel -->
+  <div class="card-right">
+    <div class="qr-label-top">Scan to begin</div>
+
+    <div class="qr-img">
+      <img src="data:image/png;base64,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" alt="QR code for trystillpoint.life/welcome">
+    </div>
+
+    <div class="qr-cta">Videos · How-to<br>Feedback · Support</div>
+    <div class="qr-url">trystillpoint.life/welcome</div>
+  </div>
+
+</div>
+
+</body>
+</html>

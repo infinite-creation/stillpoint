@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Still Point — Limited Batch Launch Plan</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f5f4f0;
+    color: #1a1a1a;
+    padding: 40px 32px;
+    min-height: 100vh;
+  }
+
+  header {
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #111;
+  }
+
+  header p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 0.2px;
+  }
+
+  .batch-badge {
+    display: inline-block;
+    margin-top: 12px;
+    background: #111;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .track {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 22px 18px;
+    border: 1px solid #e8e7e3;
+    position: relative;
+  }
+
+  .track-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .track-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  .track-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #f0efe9;
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+
+  .item:last-child { border-bottom: none; padding-bottom: 0; }
+  .item:first-of-type { padding-top: 0; }
+
+  .dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .dot-done    { background: #1a1a1a; color: #fff; }
+  .dot-active  { background: #f5a623; color: #fff; }
+  .dot-pending { background: #e5e4df; color: #999; }
+
+  .item-text { color: #2a2a2a; }
+  .item-note {
+    display: block;
+    font-size: 11.5px;
+    color: #999;
+    margin-top: 2px;
+  }
+
+  /* Status track: full-width flow diagram */
+  .flow-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 28px 28px 22px;
+    border: 1px solid #e8e7e3;
+    margin-bottom: 32px;
+  }
+
+  .flow-section h2 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 20px;
+  }
+
+  .flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .phase {
+    flex: 1;
+    min-width: 160px;
+    position: relative;
+  }
+
+  .phase-arrow {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    color: #ccc;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .phase-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+
+  .phase-box {
+    background: #f7f6f2;
+    border-radius: 10px;
+    padding: 14px;
+    height: 100%;
+  }
+
+  .phase-box.phase-done    { background: #f0f0ee; border: 1.5px solid #c5c5c0; }
+  .phase-box.phase-active  { background: #fffbf0; border: 1.5px solid #f5a623; }
+  .phase-box.phase-next    { background: #f7f6f2; border: 1.5px dashed #ccc; }
+
+  .phase-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+  }
+
+  .phase-items {
+    list-style: none;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.7;
+  }
+
+  .phase-items li::before {
+    content: '· ';
+    color: #aaa;
+  }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+  /* Note callout */
+  .callout {
+    background: #fffbf0;
+    border: 1px solid #f5c842;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #6b5a00;
+    line-height: 1.6;
+  }
+
+  .callout strong {
+    color: #4a3d00;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+    margin-bottom: 12px;
+  }
+
+  /* Color themes per track */
+  .track-sales   .track-icon { background: #eef4ff; }
+  .track-email   .track-icon { background: #f0fdf4; }
+  .track-social  .track-icon { background: #fef3f2; }
+  .track-paid    .track-icon { background: #f5f0ff; }
+  .track-ops     .track-icon { background: #fff7e6; }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #e8e7e3;
+    margin: 28px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Still Point</h1>
+  <p>Limited Batch Launch Plan — Overview</p>
+  <span class="batch-badge">Batch 1 · 400 Units</span>
+</header>
+
+<!-- Legend -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#1a1a1a"></div> Done</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f5a623"></div> In progress / action needed</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#e5e4df"></div> Upcoming</div>
+</div>
+
+<!-- Phase flow -->
+<div class="flow-section">
+  <h2>Launch phases</h2>
+  <div class="flow">
+
+    <div class="phase">
+      <div class="phase-label">Phase 1</div>
+      <div class="phase-box phase-done">
+        <div class="phase-name">Foundation ✓</div>
+        <ul class="phase-items">
+          <li>Shopify store live</li>
+          <li>goinginward.life connected</li>
+          <li>Email automation live (5 emails)</li>
+          <li>Sender domain authenticated</li>
+          <li>Instagram account set up</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-arrow">→</div>
+
+    <div class="phase">
+      <div class="phase-label">Phase 2 · Now</div>
+      <div class="phase-box phase-active">
+        <div class="phase-name">Sales &amp; Ops 🔄</div>
+        <ul class="phase-items">
+          <li>Check device weight</li>
+          <li>Confirm first-class envelope fits</li>
+          <li>Start posting on Instagram</li>
+          <li>Manufacturing (30–60 days)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-arrow">→</div>
+
+    <div class="phase">
+      <div class="phase-label">Phase 3 · Next</div>
+      <div class="phase-box phase-next">
+        <div class="phase-name">Growth</div>
+        <ul class="phase-items">
+          <li>Meta ads (paid acquisition)</li>
+          <li>Instagram content cadence</li>
+          <li>Collect first reviews</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phase-arrow">→</div>
+
+    <div class="phase">
+      <div class="phase-label">Phase 4</div>
+      <div class="phase-box phase-next">
+        <div class="phase-name">Fulfillment</div>
+        <ul class="phase-items">
+          <li>Ship batch (first-class)</li>
+          <li>Tracking emails to customers</li>
+          <li>Gather feedback + reviews</li>
+          <li>Plan Batch 2</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Track cards -->
+<div class="section-label">By area</div>
+<div class="grid">
+
+  <!-- Sales infra -->
+  <div class="track track-sales">
+    <div class="track-header">
+      <div class="track-icon">🛒</div>
+      <div class="track-title">Sales Infrastructure</div>
+    </div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">Shopify store live<span class="item-note">goinginward.life — ready for orders</span></div></div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">Product listed &amp; priced</div></div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">Domain authenticated &amp; connected</div></div>
+  </div>
+
+  <!-- Email -->
+  <div class="track track-email">
+    <div class="track-header">
+      <div class="track-icon">✉️</div>
+      <div class="track-title">Email / CRM</div>
+    </div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">PushOwl / Brevo connected to Shopify</div></div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">5-email pre-order warming sequence<span class="item-note">Triggers on "Order Created" · Active now</span></div></div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">Sender domain authenticated<span class="item-note">goinginward.life — deliverability confirmed</span></div></div>
+  </div>
+
+  <!-- Social -->
+  <div class="track track-social">
+    <div class="track-header">
+      <div class="track-icon">📸</div>
+      <div class="track-title">Organic Social</div>
+    </div>
+    <div class="item"><div class="dot dot-done">✓</div><div class="item-text">Instagram account set up</div></div>
+    <div class="item"><div class="dot dot-active">▶</div><div class="item-text">Start posting<span class="item-note">Ready to go — content needed</span></div></div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Content calendar / cadence<span class="item-note">Product, practice, founder story</span></div></div>
+  </div>
+
+  <!-- Paid -->
+  <div class="track track-paid">
+    <div class="track-header">
+      <div class="track-icon">📣</div>
+      <div class="track-title">Paid Acquisition</div>
+    </div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Meta ads setup<span class="item-note">Near future — after organic proves signal</span></div></div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Creative assets for ads</div></div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Audience &amp; targeting strategy</div></div>
+  </div>
+
+  <!-- Ops / Fulfillment -->
+  <div class="track track-ops">
+    <div class="track-header">
+      <div class="track-icon">📦</div>
+      <div class="track-title">Packaging &amp; Fulfillment</div>
+    </div>
+    <div class="item"><div class="dot dot-active">▶</div><div class="item-text">Check device weight<span class="item-note">USPS First-Class envelope: ≤ 3.5 oz · Parcel: ≤ 13 oz</span></div></div>
+    <div class="item"><div class="dot dot-active">▶</div><div class="item-text">Confirm first-class envelope approach<span class="item-note">Cost-effective; bulge acceptable if within limits</span></div></div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Finalize packaging inserts / unboxing<span class="item-note">Even a simple card adds a lot</span></div></div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Ship batch (30–60 day window)</div></div>
+    <div class="item"><div class="dot dot-pending">○</div><div class="item-text">Shopify tracking / shipping notifications</div></div>
+  </div>
+
+</div>
+
+<!-- Shipping note -->
+<div class="callout">
+  <strong>Shipping note:</strong> USPS First-Class Mail for envelopes handles up to <strong>3.5 oz</strong>. If Still Point (device + any insert) comes in under that, you're in ideal territory — typically $0.68–$1.35 per piece. Above 3.5 oz it shifts to First-Class Package (up to 13 oz), which runs $4–$6. Worth weighing the device + envelope before committing. Even a simple folded card inside the envelope can elevate the unboxing feel without adding much weight.
+</div>
+
+</body>
+</html>

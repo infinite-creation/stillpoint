@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome — Still Point</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f8f7f3;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #555;
+    --ink-faint: #999;
+    --rule: #e8e6e0;
+    --accent: #3d3d3a;
+    --max: 600px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── Nav ─── */
+  nav {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  nav .wordmark {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  /* ─── Sections ─── */
+  section {
+    padding: 56px 24px;
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+
+  section + section {
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ─── Hero ─── */
+  .hero {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .hero .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(26px, 6vw, 36px);
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    color: var(--ink-soft);
+    max-width: 440px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ─── How-to ─── */
+  .how-to h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 32px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .step {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .step-body h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--ink);
+  }
+
+  .step-body p {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  /* ─── Videos ─── */
+  .videos h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 8px;
+  }
+
+  .videos .subtitle {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+
+  .video-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .video-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .video-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #eeede9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--ink-faint);
+  }
+
+  .video-placeholder svg {
+    opacity: 0.4;
+  }
+
+  .video-placeholder span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .video-card-label {
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    border-top: 1px solid var(--rule);
+  }
+
+  .video-card-label span {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: var(--ink-faint);
+    margin-top: 2px;
+  }
+
+  /* ─── Feedback ─── */
+  .feedback h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 8px;
+  }
+
+  .feedback .subtitle {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+
+  .feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .feedback textarea, .feedback input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    font-size: 14.5px;
+    font-family: inherit;
+    color: var(--ink);
+    background: var(--surface);
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .feedback textarea:focus,
+  .feedback input:focus {
+    border-color: #aaa;
+  }
+
+  .feedback textarea { min-height: 100px; }
+
+  .rating-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .rating-row label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: var(--ink-faint);
+    cursor: pointer;
+  }
+
+  .rating-row input[type="radio"] { display: none; }
+
+  .rating-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+
+  .rating-row input[type="radio"]:checked + .rating-btn {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+
+  .btn-primary:hover { opacity: 0.82; }
+
+  .review-link {
+    text-align: center;
+    padding-top: 14px;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+
+  .review-link a {
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* ─── Support ─── */
+  .support h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 8px;
+  }
+
+  .support .subtitle {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  /* ─── Share ─── */
+  .share h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 8px;
+  }
+
+  .share .subtitle {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  .share-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .support-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s;
+  }
+
+  .support-card:hover { border-color: #aaa; }
+
+  .support-card .icon {
+    font-size: 20px;
+    width: 36px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .support-card .label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .support-card .detail {
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    margin-top: 1px;
+  }
+
+  .support-card .arrow {
+    margin-left: auto;
+    color: var(--ink-faint);
+    font-size: 16px;
+  }
+
+  /* ─── Footer ─── */
+  footer {
+    text-align: center;
+    padding: 32px 24px 40px;
+    border-top: 1px solid var(--rule);
+    font-size: 12px;
+    color: var(--ink-faint);
+    line-height: 1.7;
+  }
+
+  footer a {
+    color: var(--ink-faint);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="wordmark" href="#">Still Point</a>
+</nav>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <p class="eyebrow">Welcome</p>
+  <h1>You're one of the first.</h1>
+  <p>Thank you for being part of the initial batch. This page has everything you need to get started — and I'm here if you have any questions at all.</p>
+</section>
+
+<!-- ─── How to Use ─── -->
+<section class="how-to" id="how-to">
+  <h2>How to use it</h2>
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <h3>Position</h3>
+        <p>Place Still Point gently on the outer sides of your nose — below the bridge, resting on the soft tissue of the sidewalls. It sits on the outside. Never in the nostrils.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <h3>Settle</h3>
+        <p>Take a few natural breaths. Let Still Point find its place. If the fit feels slightly off, adjust the position along the sidewalls — most people find the right spot within the first few tries.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <h3>Breathe</h3>
+        <p>Let your attention follow the breath. Still Point amplifies the felt signal — the movement of air becomes easier to notice. You don't need to do anything else. Just be there.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <h3>Give it a week</h3>
+        <p>The first session can feel a little unfamiliar. After a few uses it becomes natural — not a device you're wearing, but a quiet support for the breath you're already taking.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── Meditations ─── -->
+<section class="videos" id="meditations">
+  <h2>Guided practices</h2>
+  <p class="subtitle">A few short sessions to help you get the most out of Still Point from day one.</p>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="19" stroke="#999" stroke-width="1.5"/>
+          <polygon points="16,13 30,20 16,27" fill="#999"/>
+        </svg>
+        <span>Video coming soon</span>
+      </div>
+      <div class="video-card-label">
+        Introduction &amp; first use
+        <span>3 min · Getting oriented</span>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="19" stroke="#999" stroke-width="1.5"/>
+          <polygon points="16,13 30,20 16,27" fill="#999"/>
+        </svg>
+        <span>Video coming soon</span>
+      </div>
+      <div class="video-card-label">
+        5-minute breath anchor
+        <span>5 min · Settling the nervous system</span>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="19" stroke="#999" stroke-width="1.5"/>
+          <polygon points="16,13 30,20 16,27" fill="#999"/>
+        </svg>
+        <span>Video coming soon</span>
+      </div>
+      <div class="video-card-label">
+        10-minute sitting practice
+        <span>10 min · Meditation with Still Point</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── Feedback ─── -->
+<section class="feedback" id="feedback">
+  <h2>How is it going?</h2>
+  <p class="subtitle">Your experience matters — especially from this first batch. A few words go a long way.</p>
+
+  <form action="mailto:hello@goinginward.life" method="post" enctype="text/plain">
+
+    <div>
+      <p style="font-size:13px; font-weight:600; margin-bottom:10px; color:#444;">How would you rate your experience so far?</p>
+      <div class="rating-row">
+        <label><input type="radio" name="rating" value="1"><div class="rating-btn">1</div></label>
+        <label><input type="radio" name="rating" value="2"><div class="rating-btn">2</div></label>
+        <label><input type="radio" name="rating" value="3"><div class="rating-btn">3</div></label>
+        <label><input type="radio" name="rating" value="4"><div class="rating-btn">4</div></label>
+        <label><input type="radio" name="rating" value="5"><div class="rating-btn">5</div></label>
+      </div>
+    </div>
+
+    <textarea name="feedback" placeholder="Anything you'd like to share — what you noticed, what felt right, what didn't. All of it helps."></textarea>
+
+    <input type="email" name="email" placeholder="Your email (optional — only if you'd like a reply)">
+
+    <button type="submit" class="btn-primary">Send feedback</button>
+  </form>
+
+  <p class="review-link">Enjoying it? <a href="https://trystillpoint.life/review" target="_blank">Leave a review →</a></p>
+</section>
+
+<!-- ─── Share ─── -->
+<section class="share" id="share">
+  <h2>Know someone who'd love this?</h2>
+  <p class="subtitle">Still Point is a small first batch. If it's been meaningful for you, sharing it with one person means more than any ad ever could.</p>
+
+  <div class="share-options">
+    <a class="support-card" href="sms:?body=I've been using Still Point — a soft breath anchor for meditation. Worth a look: https://trystillpoint.life">
+      <div class="icon">💬</div>
+      <div>
+        <div class="label">Text a friend</div>
+        <div class="detail">Share via iMessage or SMS</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+    <a class="support-card" href="https://trystillpoint.life" onclick="navigator.clipboard && navigator.clipboard.writeText('https://trystillpoint.life'); this.querySelector('.detail').textContent='Link copied!'; setTimeout(()=>this.querySelector('.detail').textContent='trystillpoint.life',2000); return false;">
+      <div class="icon">🔗</div>
+      <div>
+        <div class="label">Copy link</div>
+        <div class="detail">trystillpoint.life</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+    <a class="support-card" href="https://trystillpoint.life/gift" target="_blank">
+      <div class="icon">🎁</div>
+      <div>
+        <div class="label">Gift Still Point</div>
+        <div class="detail">Order one for someone you care about</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+  </div>
+</section>
+
+<!-- ─── Support ─── -->
+<section class="support" id="support">
+  <h2>Support</h2>
+  <p class="subtitle">Questions about fit, care, or anything else — reach out. I read everything.</p>
+
+  <div class="support-options">
+    <a class="support-card" href="mailto:hello@goinginward.life">
+      <div class="icon">✉️</div>
+      <div>
+        <div class="label">Email directly</div>
+        <div class="detail">hello@goinginward.life · I reply personally</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+    <a class="support-card" href="https://instagram.com" target="_blank">
+      <div class="icon">📸</div>
+      <div>
+        <div class="label">Instagram</div>
+        <div class="detail">@stillpointbreath · DMs welcome</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer>
+  <p>Still Point · <a href="https://goinginward.life">goinginward.life</a></p>
+  <p style="margin-top:6px;">Still Point is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</footer>
+
+</body>
+</html>
