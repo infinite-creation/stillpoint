@@ -1,7 +1,7 @@
 # Still Point — Home Page FAQ Copy
 
-**Version:** v1.1
-**Based on:** Canon documents v1.0
+**Version:** v2.0
+**Based on:** Canon documents v2.0
 **Section:** Section 6 — FAQ (Friction Killers)
 
 ---
@@ -24,7 +24,17 @@ No — breathing remains full and unrestricted. But here's something interesting
 
 Still Point hovers in the space just below the nostrils. Rather than flowing straight up into the nose, incoming air is gently redirected — finding its way in from two directions: along the back-bottom of the nose where it meets the upper lip, and from the front near the tip. These two paths together wash across more of the nostril's surface than a straight upward flow would, engaging the sides and lower portions where breath sensation tends to be richest.
 
-That fuller surface contact is the amplification. The breath doesn't change in volume — it changes in vividness. More of the nostril comes alive with each breath, which is what makes attention easier to anchor there.
+That fuller surface contact is the amplification — and it works in both directions. On the exhale, warm air rebounds off the sill and rises along the sides of the nose, a second wave of sensation on every out-breath.
+
+Cooler on the way in. Warmer on the way out. The breath doesn't change in volume — it changes in vividness.
+
+---
+
+### What does it actually feel like?
+
+On the in-breath, you'll notice a subtle coolness that feels broader and more present than usual — air arriving from more directions, washing across more of the nostril's surface. On the out-breath, warmth rises gently along the sides of the nose as air rebounds off the sill. It's bidirectional: both the inhale and the exhale become more vivid.
+
+Most people notice it right away. The breath simply becomes easier to find, easier to stay with, and easier to return to when the mind wanders.
 
 ---
 
@@ -42,7 +52,7 @@ No. Still Point isn't designed to open the airway or change how you breathe. It'
 
 ### How does it stay on?
 
-It's self-retaining by contour fit. Still Point rests against the outer nasal sidewalls, and that gentle surface contact keeps it in place—no adhesive, no clamping, no straps. It should feel stable and comfortable, not pinched or forced.
+It's self-retaining by contour fit. Still Point's S-curved arms rest against the outer nasal sidewalls, and that gentle contoured contact keeps it in place — no adhesive, no clamping, no straps. It should feel stable and comfortable, not pinched or forced.
 
 ---
 
@@ -96,7 +106,7 @@ No. Still Point is not a medical device and is not intended to diagnose, treat, 
 
 ### What if it doesn't work for me?
 
-*(Add your return/satisfaction policy here when finalized — e.g., "We offer a 30-day return policy. If Still Point isn't the right fit, reach out and we'll make it right.")*
+We offer a 30-day satisfaction guarantee. If you're not completely satisfied with your StillPoint, you can return it within 30 days of receipt for a full refund of your purchase price.
 
 ---
 

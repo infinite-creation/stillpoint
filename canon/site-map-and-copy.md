@@ -1,11 +1,13 @@
 # Site Map & Copy — Still Point (Single-Page v1)
 
-**Version:** v1.0  
-**Last updated:** 2026-02-12  
-**Owner:** Michael  
+**Version:** v2.1
+**Last updated:** 2026-03-13
+**Owner:** Michael
 
 ## Changelog
 - v1.0 — Initial canonical release (balanced: meditation + sleep).
+- v2.0 — Updated hero trust bullets, Section 2 bullets and explanation, Section 3 fit truth paragraph, Section 4 use case language, and Section 6 FAQ answer for "Does it block breathing?" Retired "leaves airflow unobstructed" throughout. Aligned with product-canon v2.0 and claims-guardrails v2.0.
+- v2.1 — Approved buy block product description (updated from "leaving airflow unobstructed"). Confirmed return policy language. Added approved hero-below sentence as canonical copy. Updated "What if it doesn't work for me?" FAQ answer.
 
 ---
 
@@ -29,6 +31,9 @@ Make the breath easier to feel.
 ### Subhead
 Still Point is a small, external, nose-worn breath anchor that amplifies sensation at the nostrils—so attention returns naturally for calmer meditation and an easier wind-down at night.
 
+### Below-hero sentence (approved, live on page — "device" is an approved exception to tool preference)
+StillPoint is a tiny, tactile meditation device worn on the nose that makes the breath easier to feel, allowing greater concentration.
+
 ### CTA buttons
 - Primary: **Buy Now**
 - Secondary: **Get Updates**
@@ -37,8 +42,8 @@ Still Point is a small, external, nose-worn breath anchor that amplifies sensati
 No apps. No tracking. No batteries. Worn externally—never enters the nostrils.
 
 ### Optional “3 trust bullets” (right under hero)
-- Worn externally; airflow unobstructed  
-- Anchors on sidewalls, floats around the tip  
+- Worn externally; never enters the nostrils
+- Anchors on sidewalls, floats around the tip
 - On/off in seconds, anywhere
 
 ---
@@ -49,11 +54,11 @@ No apps. No tracking. No batteries. Worn externally—never enters the nostrils.
 What it is
 
 ### 2–4 sentence explanation
-Still Point is a soft, external meditation tool worn on the nose. It never enters the nostrils and it doesn’t block breathing. It makes the breath easier to feel at the nostrils, giving attention a clear sensory place to return.
+Still Point is a soft, external meditation tool worn on the nose. It never enters the nostrils and it doesn’t reduce your breath. It gently redirects airflow to make the breath more vivid at the nostrils—giving attention a clearer, richer sensory place to focus on and return to.
 
 ### Bullets
 - External-only (never enters the nostrils)
-- Leaves airflow unobstructed
+- Full breath volume — always
 - Amplifies the felt signal of breathing at the nostrils
 - Helps attention return—again and again—without forcing
 
@@ -70,7 +75,7 @@ How it works
 3. **Practice steadies.** Over time, this supports calmer sessions and stronger continuity.
 
 ### Fit truth (one paragraph)
-Still Point rests securely on the outer nasal sidewalls while floating around the nasal tip. This keeps breathing unobstructed while expanding sensation around the nostrils—especially the lower region.
+Still Point anchors on the outer nasal sidewalls via S-curved arms, floating freely around the nasal tip. Its lower span — the sill — hovers nearly flush against the nasal floor, gently redirecting incoming air along two paths: in from behind where the nose meets the lip, and in from the front around the tip. These streams converge beneath the nostrils, washing across more of the nostril surface where breath sensation is richest. On the exhale, warm air rebounds off the sill and rises along the sides of the nose. Cooler on the way in. Warmer on the way out. The breath doesn't change in volume — it changes in vividness.
 
 ### Optional mini-callout (short)
 Not a nasal insert. Not a dilator. Just a quiet sensory anchor.
@@ -90,7 +95,7 @@ A simple tool for meditation, transitions, and sleep wind-down—any time you wa
 - **Between moments** — a grounding cue when life is loud or scattered.
 - **Sleep support** — support for falling asleep and returning to sleep if you wake with a busy mind.
 - **Travel & public spaces** — discreet, portable, and simple.
-- **Integration & tender seasons** — supports calm, embodied attention when emotions are strong.
+- **Difficult chapters** — supports calm, embodied attention when emotions are strong.
 
 ---
 
@@ -110,7 +115,11 @@ I built Still Point because I kept seeing the same challenge: people want to res
 ## 6) FAQ (friction killers)
 
 ### Q: Does it block breathing?
-No. Still Point is worn externally and is designed to leave airflow unobstructed.
+No — breathing remains full and unrestricted. But here's something interesting about how Still Point actually works.
+
+Still Point hovers in the space just below the nostrils. Rather than flowing straight up into the nose, incoming air is gently redirected — finding its way in from two directions: along the back-bottom of the nose where it meets the upper lip, and from the front near the tip. These two paths together wash across more of the nostril's surface than a straight upward flow would, engaging the sides and lower portions where breath sensation tends to be richest. On the exhale, warm air rebounds off the sill and rises along the sides of the nose — a second wave of sensation on every out-breath.
+
+The breath doesn't change in volume — it changes in vividness.
 
 ### Q: Does it go inside the nostrils?
 No. It never enters the nostrils.
@@ -146,10 +155,16 @@ No. Still Point is not a medical device and is not intended to diagnose, treat, 
 ### Section heading
 Get Still Point
 
+### Product description (buy block — approved v2.1)
+StillPoint is a soft, external breath anchor worn on the nose that makes the breath easier to feel at the nostrils—so attention can return naturally. It rests gently on the outer nasal sidewalls and intentionally floats around the nasal tip, quietly redirecting airflow to make the breath more vivid at and around the nostrils. No apps. No tracking. No batteries—just a quiet, tactile cue for meditation, transitions between tasks, and bedtime wind-down. Individual experiences vary.
+
+### Return policy (approved v2.1)
+We offer a 30-day satisfaction guarantee. If you’re not completely satisfied with your StillPoint, you can return it within 30 days of receipt for a full refund of your purchase price.
+
 ### Purchase microcopy (choose what’s true at launch)
 - Ships from the U.S.
 - Simple cleaning (soap + warm water)
-- 30-day returns (if you offer it) / satisfaction policy (define)
+- 30-day satisfaction guarantee
 
 ### Disclaimer micro-line (optional)
 Individual experiences vary.
