@@ -1,155 +1,142 @@
 # Still Point — Session Notes
 **Date:** March 12, 2026
 **Participants:** Michael + Claude
-**Status:** Paused — resuming after hike. Photos incoming.
+**Status:** End of day — resuming tomorrow. Canon update in progress.
 
 ---
 
-## What we accomplished today
+## What we accomplished today (full day)
 
 1. **Read all six canon documents** in full: product-canon.md, claims-guardrails.md, mission-identity.md, archetype-profiles.md, site-brief.md, site-map-and-copy.md.
-2. **Created faq-copy.md** — a polished, 13-question FAQ ready for the home page, saved to the stillpoint folder.
+2. **Created faq-copy.md** — a polished, 13-question FAQ ready for the home page.
 3. **Rewrote the "Does it block breathing?" FAQ answer** based on Michael's deeper explanation of the airflow mechanism.
-4. **Had an extended conversation about the device and airflow mechanics** that significantly deepens and corrects the existing canon.
-5. **Named two new terms** (sill and span) for a previously unnamed structural element.
-6. **Agreed on next steps:** canon updates → site copy updates → Instagram and other channels.
+4. **Deep-dive conversation on device geometry and airflow mechanics** — significantly expanded and corrected the product understanding (see full details below).
+5. **Named two new terms** — sill and span — for the previously unnamed lower structural element.
+6. **Reviewed three photos** of the device worn on the nose (bottom-up, front, side profile) — confirmed all geometry and airflow details visually.
+7. **Updated product-canon.md to v2.0** — major rewrite incorporating all new understanding.
+8. **Verified GitHub sync** — committed and pushed 15 files; clean baseline confirmed before canon edits began.
 
 ---
 
-## The core new understanding (not yet in any canon doc)
+## The complete new understanding (confirmed by photos)
 
-This is the most important section. Everything below needs to be folded into the canon files before any copy work proceeds.
-
-### 1. The sill / span — a named structural element
+### 1. The sill / span — named structural element
 
 The underside of Still Point is a **flat span** (not an arch, not an open channel) that bridges across the bottom of both nostrils. It sits **nearly flush against the nasal floor**, hovering just below the nostril openings.
 
 **Two approved names:**
-- **Span** — the functional/technical term. Use in canon and explanatory copy.
-- **Sill** — the brand/copy term. Use in consumer-facing content. Warm, architectural, minimal. Quietly echoes "Still." Both terms approved by Michael.
+- **Sill** — preferred term in consumer-facing and brand copy. Warm, architectural, minimal. Quietly echoes "Still."
+- **Span** — preferred term in technical, canon, and explanatory copy. Precise and unambiguous.
 
-**Why this matters:** The sill is not described anywhere in the existing canon. Its geometry is the foundation of the entire airflow mechanism.
+**The slight V at the center:** The sill has a subtle V-shape dipping at its center. This is anatomical — it accommodates the **apex** (the structure separating the two nostrils, which sits slightly lower than the nostril openings), allowing the sill to contour closely to the nasal floor on both sides while clearing the center.
 
-### 2. Proximity is the amplification dial
+### 2. The S-curve arms — dual function (confirmed)
 
-The closer the sill is to the nasal floor, the more it redirects airflow, and the **greater the amplification**. The device can be manually adjusted — pulling it down widens the gap between sill and nostrils, which **decreases amplification**. Bringing it closer increases it.
+Each arm follows a deliberate S-curve from the sill upward to the sidewall contact point. Two functions:
+1. **Fit:** the curve follows the natural narrowing of the nose from the face outward, making full contact along the outer alar sidewall.
+2. **Exhalation channeling:** the inward curve actively catches and directs warm exhaled air upward along the sides of the nose, engaging more neurons and amplifying the out-breath sensation.
 
-This is a meaningful product insight that's absent from all current docs. It implies user adjustability and a spectrum of experience, not a binary on/off.
+### 3. Proximity as the amplification dial
 
-### 3. The inhalation mechanism (corrected and expanded)
+The closer the sill is to the nasal floor, the more it redirects airflow, and the **greater the amplification**. The device can be manually adjusted — pulling it down widens the gap and decreases amplification; bringing it closer increases it. Proximity is the dial.
 
-**Current canon says:** "leaves airflow unobstructed" and "amplifies sensation at the nostrils." This is incomplete and technically imprecise.
+### 4. Inhalation mechanism
 
-**What actually happens on inhalation:**
-- The sill sits nearly flush beneath the nostrils, closing off the most direct upward path for incoming air.
-- Air is **redirected** along two alternative routes:
-  - **Back-bottom path:** air enters from behind, where the base of the nose meets the upper lip.
-  - **Front path:** air enters from the front, near/around the tip of the nose.
-- These two streams **converge beneath the nostrils** and create **vortices** — swirling air patterns that further amplify neuronal stimulation beyond simple surface contact.
-- The combined effect washes across **more of the nostril's surface area**, particularly the sides and lower portions where breath sensation is richest.
+- Sill sits nearly flush beneath the nostrils, closing off the direct upward air path.
+- Air reroutes along two paths: **back-bottom** (where nose meets upper lip) and **front** (around the tip, through the float zone).
+- Two streams converge beneath the nostrils and create **vortices** — swirling air that further amplifies sensation.
+- Effect washes across more of the nostril surface, especially sides and lower portions.
 
-**Key phrase (approved in FAQ):** "The breath doesn't change in volume — it changes in vividness."
+### 5. Exhalation mechanism (entirely new — not in v1.0 canon)
 
-### 4. The exhalation mechanism (entirely new — not in any doc)
+- Warm air exits nostrils downward, immediately contacts inner surface of the sill.
+- Rebounds outward: out the back, out the front, and **upward along the sides** of the nose — channeled by the S-curve arms.
+- Michael's word: **"plumes"** of warm air rising.
+- Creates a second wave of amplified sensation on the out-breath.
 
-This was completely absent from the canon and is a significant addition to the product understanding.
+### 6. Bidirectional sensory experience
 
-**What happens on exhalation:**
-- Warm air exits the nostrils downward.
-- It immediately contacts the **inner surface of the sill**.
-- It **rebounds** outward in three directions: out the back, out the front, and **up the sides** (in the channel between the device and the nose).
-- Michael described these as **"plumes"** of warm air rising.
+Every breath cycle is amplified both ways:
+- **Inhalation:** cool, redirected, converging in vortices.
+- **Exhalation:** warm, rebounding as plumes along the sides.
+- Key line (canon-approved): *"The breath doesn't change in volume — it changes in vividness."*
 
-**Why this matters for copy:** The exhalation experience may be the most immediately felt sensation for new users. The cool inhalation + warm exhalation creates a **bidirectional sensory experience** on every breath cycle — richer, more vivid, easier to follow. This is a significant selling point that currently doesn't appear anywhere.
+### 7. "Leaves airflow unobstructed" — RETIRED
 
-### 5. What "leaves airflow unobstructed" actually means — and needs to change
-
-The phrase **"leaves airflow unobstructed"** appears in nearly every canon document and in the site-map-and-copy.md. It is currently the single most consequential inaccuracy across the canon.
-
-The device **does** redirect airflow. That redirection is the mechanism. "Unobstructed" implies the air flows exactly as it would without the device — which is false and undersells what Still Point actually does.
-
-**Suggested replacement direction:** language around "redirected," "re-routed," or "gently redirected" — framing the redirect as a feature, not a limitation. The breath volume is unchanged; the path and vividness are amplified.
-
-This phrase needs to be found and updated in: product-canon.md, mission-identity.md, site-brief.md, site-map-and-copy.md, and anywhere in marketing copy.
+This phrase appeared in nearly every canon doc and was technically inaccurate. The device **does** redirect airflow — that redirection is the mechanism. Formally retired in product-canon.md v2.0. Replace everywhere with: "gently redirects airflow" or "full breath volume, redirected path."
 
 ---
 
-## What photos will confirm
-
-Michael is preparing photos to upload after the hike. Key things to look for:
-
-- **Front view:** confirm the sill/span geometry and how it sits below the nostrils.
-- **Below/underside view:** confirm proximity of sill to nasal floor; see the gap that redirects airflow.
-- **Side profile:** confirm sidewall anchoring and tip float.
-- **Airflow arrows (if added):** inhalation paths (back-bottom + front) and exhalation plume directions.
-
-Do not finalize canon language for the mechanism until photos are reviewed.
-
----
-
-## Files created or modified this session
+## Files created or modified today
 
 | File | Status | Notes |
 |------|--------|-------|
-| `stillpoint/faq-copy.md` | ✅ Created (v1.1) | 13-question FAQ, home page ready. "Does it block breathing?" answer updated with two-path airflow explanation. Vortex and exhalation plumes NOT yet in this file — awaiting photo confirmation. |
-| `stillpoint/session-notes-2026-03-12.md` | ✅ Created | This file. |
+| `canon/product-canon.md` | ✅ Updated to v2.0 | Major rewrite. Sill/span, S-curve arms, vortex, exhalation plumes, proximity dial, apex accommodation, bidirectional experience, retired phrases. |
+| `faq-copy.md` | ✅ Created (v1.1) | 13-question FAQ. "Does it block breathing?" updated with two-path airflow. Vortex and exhalation plumes still need to be added. |
+| `session-notes-2026-03-12.md` | ✅ Updated | This file. |
 
 ---
 
-## What needs to be done next session (in order)
+## Marketing note — flagged by Michael
 
-### Step 1 — Review photos
-Upload and review photos together. Confirm geometry, proximity, and airflow paths. Lock in final language for the mechanism before writing anything.
+The following line from product-canon.md was called out as strong marketing material:
 
-### Step 2 — Update product-canon.md
+> **"Practice-first: supports attention; does not demand attention."**
+
+This speaks directly to people burned out by meditation apps that track, grade, and pressure. Still Point makes no demands. Flagged for use in ads, Instagram captions, and site copy.
+
+---
+
+## What still needs to be done (in order)
+
+### Step 1 — Update claims-guardrails.md ← NEXT
 Sections to update:
-- **Canon statement:** reframe "leaves airflow unobstructed" → redirects airflow
-- **Fit + contact model:** add the sill/span as a named element with description
-- **Mechanism of action:** expand to include inhalation redirection, vortex formation, and exhalation rebound/plumes
-- **What users should feel:** add the bidirectional sensory experience (cool in, warm out)
-- **Approved phrases:** add "sill," "span," "redirects airflow," "vortex," "exhalation plumes" or equivalent
+- Add safe phrasing for airflow redirection mechanism
+- Formally replace "leaves airflow unobstructed" with approved alternatives
+- Add the "Does it block breathing?" answer as a copy formula template
+- Add new approved phrasing patterns using sill, vortex, plume language (with appropriate guardrails)
 
-### Step 3 — Update claims-guardrails.md
-- Add safe phrasing for the airflow redirection mechanism
-- Update or replace "leaves airflow unobstructed" with approved alternative
-- Add the "Does it block breathing?" answer as a copy formula template (it's the clearest expression of the mechanism in plain language)
-
-### Step 4 — Update site-map-and-copy.md
+### Step 2 — Update site-map-and-copy.md
 Sections to update:
-- **Section 2 (What it is):** bullet "Leaves airflow unobstructed" needs reframing
-- **Section 3 (How it works):** the fit truth paragraph and 3-step mechanism need full rewrite with sill, vortex, and exhalation language
-- **Section 6 (FAQ):** "Does it block breathing?" answer is the v1.0 stub — replace with the v1.1 version from faq-copy.md (and update that version too once photos confirm vortex/plume language)
+- **Section 2 (What it is):** "Leaves airflow unobstructed" bullet needs reframing
+- **Section 3 (How it works):** fit truth paragraph and 3-step mechanism need full rewrite with sill, S-curve, vortex, and exhalation language
+- **Section 6 (FAQ):** replace stub answer for "Does it block breathing?" with updated version from faq-copy.md
 
-### Step 5 — Update faq-copy.md
-- Add vortex formation to the "Does it block breathing?" answer
+### Step 3 — Update faq-copy.md
+- Add vortex formation to "Does it block breathing?" answer
 - Add exhalation plume experience
-- Consider whether a new FAQ question is warranted: "What does it actually feel like?"
+- Update version reference from "Canon v1.0" to "Canon v2.0"
+- Consider adding new FAQ: "What does it actually feel like?"
 
-### Step 6 — Site copy revamp
-With updated canon as foundation, revisit the full home page copy for sections where the mechanism is described or implied.
+### Step 4 — Site copy revamp
+With updated canon as foundation, revisit full home page copy — particularly anywhere mechanism is described or implied.
 
-### Step 7 — Instagram and other channels
-Michael mentioned Instagram. Once canon is updated, develop short-form content — the vortex and plume language has strong visual potential for reels/carousels.
+### Step 5 — Instagram and other channels
+The vortex and plume language has strong visual potential for reels and carousels. "Practice-first" line is strong for ad creative. Once canon and site are locked, develop short-form content.
 
 ---
 
-## Terminology reference (new terms approved this session)
+## Terminology reference (all approved terms)
 
 | Term | Type | Use context |
 |------|------|-------------|
-| Span | Technical/canon | The flat structural element beneath the nostrils. Use in canon docs and explanatory copy. |
+| Span | Technical/canon | Flat structural element beneath the nostrils. Use in canon and explanatory copy. |
 | Sill | Brand/copy | Consumer-facing name for the span. Warm, architectural, echoes "Still." |
-| Sill proximity / proximity dial | Internal | Concept: closer sill = more amplification. Use in canon; may inform product instructions. |
-| Vortex / vortices | Mechanism | Air streams converge and swirl beneath the nostrils on inhalation. Amplifies sensation. |
-| Exhalation plumes | Mechanism | Warm air rebounds off sill inner surface and rises up the sides. Bidirectional amplification. |
-| Redirected / re-routed | Copy direction | Preferred replacement for "unobstructed" when describing airflow. |
+| Apex | Anatomical | Structure separating the two nostrils; sits lower than the nostril openings. V in sill accommodates this. |
+| S-curve arms | Technical | Arms with dual function: fit + exhalation channeling. |
+| Proximity dial | Internal concept | Closer sill = more amplification. Adjustable by user. |
+| Vortex / vortices | Mechanism | Converging inhalation streams swirl beneath the nostrils. Use selectively — vivid but technical. |
+| Exhalation plumes | Mechanism | Warm air rebounds off sill and rises along the sides. Use selectively — evocative, best in longer copy. |
+| Redirected / gently redirected | Copy direction | Approved replacement for "unobstructed." Full volume, new path. |
+| Difficult chapters | Use case copy | Replaces "emotionally intense seasons" — warmer, more human. |
+| Bidirectional breath amplification | Canon concept | Both in-breath and out-breath are amplified. |
 
 ---
 
 ## How to brief Claude in the next session
 
-Paste or share the following at the start of the next conversation:
+Paste this at the start of the next conversation:
 
-> "Please read the following files in my stillpoint folder before we begin: session-notes-2026-03-12.md, product-canon.md, claims-guardrails.md, mission-identity.md, site-map-and-copy.md, and faq-copy.md. Then let me know you're ready and I'll upload photos of the device."
+> "Please read the following files before we begin: session-notes-2026-03-12.md, canon/product-canon.md, canon/claims-guardrails.md, canon/site-map-and-copy.md, and faq-copy.md. Then confirm you're ready and we'll pick up where we left off."
 
-That's all Claude needs to be fully oriented.
+The first task tomorrow is **claims-guardrails.md**.
