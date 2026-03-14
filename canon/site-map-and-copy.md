@@ -1,13 +1,14 @@
 # Site Map & Copy — Still Point (Single-Page v1)
 
-**Version:** v2.1
-**Last updated:** 2026-03-13
+**Version:** v2.2
+**Last updated:** 2026-03-14
 **Owner:** Michael
 
 ## Changelog
 - v1.0 — Initial canonical release (balanced: meditation + sleep).
 - v2.0 — Updated hero trust bullets, Section 2 bullets and explanation, Section 3 fit truth paragraph, Section 4 use case language, and Section 6 FAQ answer for "Does it block breathing?" Retired "leaves airflow unobstructed" throughout. Aligned with product-canon v2.0 and claims-guardrails v2.0.
 - v2.1 — Approved buy block product description (updated from "leaving airflow unobstructed"). Confirmed return policy language. Added approved hero-below sentence as canonical copy. Updated "What if it doesn't work for me?" FAQ answer.
+- v2.2 — Pre-order launch copy documented: "Reserve Yours" button, pre-order notice (400 units / Ships May 2026). Buy block description updated: "focus and also return naturally" (replaces "return naturally").
 
 ---
 
@@ -35,7 +36,7 @@ Still Point is a small, external, nose-worn breath anchor that amplifies sensati
 StillPoint is a tiny, tactile meditation device worn on the nose that makes the breath easier to feel, allowing greater concentration.
 
 ### CTA buttons
-- Primary: **Buy Now**
+- Primary: **Reserve Yours** *(pre-order launch — replaces "Buy Now")*
 - Secondary: **Get Updates**
 
 ### Micro-support line (small text under buttons)
@@ -155,8 +156,11 @@ No. Still Point is not a medical device and is not intended to diagnose, treat, 
 ### Section heading
 Get Still Point
 
-### Product description (buy block — approved v2.1)
-StillPoint is a soft, external breath anchor worn on the nose that makes the breath easier to feel at the nostrils—so attention can return naturally. It rests gently on the outer nasal sidewalls and intentionally floats around the nasal tip, quietly redirecting airflow to make the breath more vivid at and around the nostrils. No apps. No tracking. No batteries—just a quiet, tactile cue for meditation, transitions between tasks, and bedtime wind-down. Individual experiences vary.
+### Pre-order notice (approved — appears above description)
+This is a pre-order. First Batch is 400 units, handcrafted in the USA. Ships May 2026.
+
+### Product description (buy block — approved v2.2)
+StillPoint is a soft, external breath anchor worn on the nose that makes the breath easier to feel at the nostrils—so attention can focus and also return naturally. It rests gently on the outer nasal sidewalls and intentionally floats around the nasal tip, quietly redirecting airflow to make the breath more vivid at and around the nostrils. No apps. No tracking. No batteries—just a quiet, tactile cue for meditation, transitions between tasks, and bedtime wind-down. Individual experiences vary.
 
 ### Return policy (approved v2.1)
 We offer a 30-day satisfaction guarantee. If you’re not completely satisfied with your StillPoint, you can return it within 30 days of receipt for a full refund of your purchase price.
