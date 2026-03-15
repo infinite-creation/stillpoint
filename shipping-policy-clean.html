@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StillPoint — Shipping Policy</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #222; line-height: 1.7; background: #fafafa; }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  .meta { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
+  h2 { font-size: 1rem; font-weight: bold; margin-top: 32px; margin-bottom: 8px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 4px; }
+  .copy-btn {
+    display: inline-block;
+    margin-bottom: 32px;
+    padding: 10px 22px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+  }
+  .copy-btn:hover { background: #444; }
+  .copy-btn.copied { background: #2a7a2a; }
+</style>
+</head>
+<body>
+
+<h1>Shipping Policy — StillPoint</h1>
+<p class="meta">Last updated: March 14, 2026</p>
+
+<button class="copy-btn" onclick="copyPolicy(this)">Copy plain text for Shopify</button>
+
+<div id="policy-display">
+
+<h2>A note on this pre-order</h2>
+<p>StillPoint Air is currently available as a pre-order. First Batch is 400 units, handcrafted in the USA. All orders placed now will ship in May 2026. You will receive a shipping confirmation with tracking information as soon as your order is on its way.</p>
+
+<h2>Processing</h2>
+<p>Once your order ships, you will receive an email confirmation with a tracking number. Please allow up to 24 hours for tracking to activate after you receive your shipping notification.</p>
+
+<h2>Domestic shipping (United States)</h2>
+<p>We offer free standard shipping on all US orders. Estimated delivery after shipment:</p>
+<ul>
+  <li>Standard shipping: 3–5 business days</li>
+  <li>Expedited shipping: 2–3 business days (additional charge applies)</li>
+</ul>
+
+<h2>International shipping</h2>
+<p>We currently ship to select international destinations. International shipping rates and estimated delivery times are calculated at checkout. Please note that international orders may be subject to customs fees, import duties, or taxes — these are the responsibility of the customer and are not included in the order total. Delivery times vary by destination, generally 7–14 business days after shipment.</p>
+
+<h2>Address accuracy</h2>
+<p>Please double-check your shipping address before placing your order. We are not responsible for orders delivered to an incorrect address provided at checkout. If you notice an error immediately after placing your order, contact us as soon as possible at hello@trystillpoint.life and we will do our best to make a correction before your order ships.</p>
+
+<h2>Lost or delayed packages</h2>
+<p>If your tracking shows your package as delivered but you have not received it, please check with neighbors and your local carrier first. If the package remains unaccounted for, contact us at hello@trystillpoint.life and we will work with you to make it right.</p>
+<p>We are not responsible for delays caused by shipping carriers, customs processing, or circumstances outside our control. All delivery timeframes are estimates.</p>
+
+<h2>Questions</h2>
+<p>We're here. Reach out anytime at hello@trystillpoint.life.</p>
+
+</div>
+
+<textarea id="policy-text" style="display:none;" readonly>
+Shipping Policy — StillPoint
+Last updated: March 14, 2026
+
+A NOTE ON THIS PRE-ORDER
+
+StillPoint Air is currently available as a pre-order. First Batch is 400 units, handcrafted in the USA. All orders placed now will ship in May 2026. You will receive a shipping confirmation with tracking information as soon as your order is on its way.
+
+PROCESSING
+
+Once your order ships, you will receive an email confirmation with a tracking number. Please allow up to 24 hours for tracking to activate after you receive your shipping notification.
+
+DOMESTIC SHIPPING (UNITED STATES)
+
+We offer free standard shipping on all US orders. Estimated delivery after shipment:
+
+- Standard shipping: 3–5 business days
+- Expedited shipping: 2–3 business days (additional charge applies)
+
+INTERNATIONAL SHIPPING
+
+We currently ship to select international destinations. International shipping rates and estimated delivery times are calculated at checkout. Please note that international orders may be subject to customs fees, import duties, or taxes — these are the responsibility of the customer and are not included in the order total. Delivery times vary by destination, generally 7–14 business days after shipment.
+
+ADDRESS ACCURACY
+
+Please double-check your shipping address before placing your order. We are not responsible for orders delivered to an incorrect address provided at checkout. If you notice an error immediately after placing your order, contact us as soon as possible at hello@trystillpoint.life and we will do our best to make a correction before your order ships.
+
+LOST OR DELAYED PACKAGES
+
+If your tracking shows your package as delivered but you have not received it, please check with neighbors and your local carrier first. If the package remains unaccounted for, contact us at hello@trystillpoint.life and we will work with you to make it right.
+
+We are not responsible for delays caused by shipping carriers, customs processing, or circumstances outside our control. All delivery timeframes are estimates.
+
+QUESTIONS
+
+We're here. Reach out anytime at hello@trystillpoint.life.
+</textarea>
+
+<script>
+function copyPolicy(btn) {
+  const text = document.getElementById('policy-text').value.trim();
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy plain text for Shopify';
+      btn.classList.remove('copied');
+    }, 2500);
+  });
+}
+</script>
+
+</body>
+</html>
