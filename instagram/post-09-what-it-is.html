@@ -18,6 +18,16 @@
     justify-content: space-between;
     padding: 52px 52px 44px 52px;
     box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    position: relative;
+  }
+
+  .sketch {
+    position: absolute;
+    top: 36px;
+    right: 30px;
+    width: 200px;
+    height: 155px;
+    pointer-events: none;
   }
 
   /* TOP MARK */
@@ -81,7 +91,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #bbb;
+    background: #999;
     margin-top: 10px;
     flex-shrink: 0;
   }
@@ -123,7 +133,7 @@
   .url {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 13px;
-    color: #bbb;
+    color: #999;
     letter-spacing: 0.04em;
   }
 
@@ -167,6 +177,8 @@
 <div class="post">
   <div class="top-mark">StillPoint™</div>
 
+  <img class="sketch" src="stillpoint-sketch-v2.1.png" alt="StillPoint Air device">
+
   <div class="copy">
     <div class="product-label">StillPoint Air</div>
     <div class="headline">A breath anchor.</div>
@@ -191,7 +203,7 @@
   </div>
 
   <div class="bottom">
-    <div class="wordmark">StillPoint</div>
+    <div class="wordmark">StillPoint™</div>
     <div class="url">trystillpoint.life</div>
   </div>
 </div>
