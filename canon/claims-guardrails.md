@@ -1,12 +1,13 @@
 # Claims & Guardrails — Still Point
 
-**Version:** v2.0
-**Last updated:** 2026-03-13
+**Version:** v2.1
+**Last updated:** 2026-04-02
 **Owner:** Michael
 
 ## Changelog
 - v1.0 — Initial canonical release.
 - v2.0 — Updated core positioning to reflect airflow-redirection mechanism. Retired "leaves airflow unobstructed." Added mechanism description guidelines (sill, vortex, plumes), new safe phrasing formulas, and updated quick examples. Added "neuronal" language to avoid list.
+- v2.1 — Moved "stress relief" from yellow-light to green-light. Approved for use in marketing copy, meta descriptions, and product descriptions. "Stress" is not a diagnosable clinical condition; "stress relief" is standard wellness lifestyle language and carries low regulatory risk.
 
 ---
 
@@ -47,6 +48,9 @@ Still Point is a soft, external, nose-worn **breath anchor** that amplifies the 
 - "Helps you settle between tasks."
 - "A grounding cue when you feel scattered."
 - "Supports nervous system settling through breath-based attention."
+- "Stress relief." ✅ *(approved v2.1 — standard wellness lifestyle language, low regulatory risk)*
+- "Supports stress relief."
+- "A tool for stress relief and calm."
 
 **Safe qualifiers**
 - "May help…"
@@ -111,7 +115,8 @@ The warm air rebounding off the sill and rising along the sides is a real, felt 
 ## Soft claims (yellow light — use carefully with qualifiers)
 These are allowed **only** when framed as experience, not treatment.
 
-- "Stress relief" → prefer "stress support" / "helps you downshift."
+- ~~"Stress relief"~~ → ✅ **moved to green-light in v2.1.** Use freely.
+- "Stress support" / "helps you downshift" remain good alternatives when a softer tone is preferred.
 - "Anxiety" → prefer "anxious feelings" / "when you feel anxious" / "when you're activated."
 - "Insomnia" → prefer "difficulty falling asleep" / "trouble returning to sleep."
 - "Regulates the nervous system" → prefer "supports nervous system settling."
